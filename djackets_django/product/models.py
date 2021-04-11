@@ -1,4 +1,4 @@
-rom io import BytesIO
+from io import BytesIO
 from PIL import Image
 
 from django.core.files import File
