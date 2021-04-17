@@ -9,7 +9,7 @@ import Category from '../views/Category.vue'
 import Search from '../views/Search.vue'
 import Cart from '../views/Cart.vue'
 import SignUp from '../views/SignUp.vue'
-// import LogIn from '../views/LogIn.vue'
+import LogIn from '../views/LogIn.vue'
 // import MyAccount from '../views/MyAccount.vue'
 // import Checkout from '../views/Checkout.vue'
 // import Success from '../views/Success.vue'
@@ -33,11 +33,11 @@ const routes = [
     name: 'SignUp',
     component: SignUp
   },
-  // {
-  //   path: '/log-in',
-  //   name: 'LogIn',
-  //   component: LogIn
-  // },
+  {
+    path: '/log-in',
+    name: 'LogIn',
+    component: LogIn
+  },
   // {
   //   path: '/my-account',
   //   name: 'MyAccount',
