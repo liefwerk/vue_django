@@ -6,9 +6,9 @@ import Home from '../views/Home.vue'
 
 import Product from '../views/Product.vue'
 import Category from '../views/Category.vue'
-// import Search from '../views/Search.vue'
-// import Cart from '../views/Cart.vue'
-// import SignUp from '../views/SignUp.vue'
+import Search from '../views/Search.vue'
+import Cart from '../views/Cart.vue'
+import SignUp from '../views/SignUp.vue'
 // import LogIn from '../views/LogIn.vue'
 // import MyAccount from '../views/MyAccount.vue'
 // import Checkout from '../views/Checkout.vue'
@@ -28,11 +28,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  // {
-  //   path: '/sign-up',
-  //   name: 'SignUp',
-  //   component: SignUp
-  // },
+  {
+    path: '/sign-up',
+    name: 'SignUp',
+    component: SignUp
+  },
   // {
   //   path: '/log-in',
   //   name: 'LogIn',
@@ -46,16 +46,16 @@ const routes = [
   //     requireLogin: true
   //   }
   // },
-  // {
-  //   path: '/search',
-  //   name: 'Search',
-  //   component: Search
-  // },
-  // {
-  //   path: '/cart',
-  //   name: 'Cart',
-  //   component: Cart
-  // },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  },
   // {
   //   path: '/cart/success',
   //   name: 'Success',
