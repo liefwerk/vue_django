@@ -11,8 +11,8 @@ import Cart from '../views/Cart.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
 import MyAccount from '../views/MyAccount.vue'
-// import Checkout from '../views/Checkout.vue'
-// import Success from '../views/Success.vue'
+import Checkout from '../views/Checkout.vue'
+import Success from '../views/Success.vue'
 
 const routes = [
   {
@@ -56,19 +56,19 @@ const routes = [
     name: 'Cart',
     component: Cart
   },
-  // {
-  //   path: '/cart/success',
-  //   name: 'Success',
-  //   component: Success
-  // },
-  // {
-  //   path: '/cart/checkout',
-  //   name: 'Checkout',
-  //   component: Checkout,
-  //   meta: {
-  //     requireLogin: true
-  //   }
-  // },
+  {
+    path: '/cart/success',
+    name: 'Success',
+    component: Success
+  },
+  {
+    path: '/cart/checkout',
+    name: 'Checkout',
+    component: Checkout,
+    meta: {
+      requireLogin: true
+    }
+  },
   {
     path: '/:category_slug/:product_slug',
     name: 'Product',

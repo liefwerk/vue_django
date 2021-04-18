@@ -6,6 +6,7 @@ djackets_vue/node_modules
 djackets_vue/yarn.lock
 djackets_vue/dist
 
+settings.py
 
 # local env files
 .env.local
